@@ -17,7 +17,7 @@ exports.avg = function avg (array) {
         j += 1;
     }
     
-    console.log(sum/(i+1));
+    console.log(sum/(j+1));
     
   return 0;
 }
