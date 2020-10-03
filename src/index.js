@@ -1,7 +1,7 @@
 
 exports.min = function min (array) {
   //  console.log(Math.min(array));
-    if (array.length === 0)
+    if (array === 'undefined')
     return 0;
     else {
         let minimum = array[0];
