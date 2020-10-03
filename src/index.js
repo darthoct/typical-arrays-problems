@@ -5,7 +5,8 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  return Math.max(array);
+   console.log(Math.max(array));
+    return 0;
 }
 
 exports.avg = function avg (array) {
@@ -15,6 +16,6 @@ exports.avg = function avg (array) {
         sum += array[i];
         i += 1;
     }
-    
-  return sum/(i+1);
+    console.log(sum/(i+1));
+  return 0;
 }
