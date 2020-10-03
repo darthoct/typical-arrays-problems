@@ -13,12 +13,21 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-    return 39;
+    if (array.length===0)
+    return 0;
+    else {
+        let maximum = array[0];
+        for(let i = 1; i<array.length; i += 1) {
+            if(maximum<array[i])
+                maximum = array[i];
+        }
+        return maximum;
+    }
   
 }
 
 exports.avg = function avg (array) {
-    if (array.length==0)
+    if (array.length===0)
         return 0;
     else {
     let j = 0;
