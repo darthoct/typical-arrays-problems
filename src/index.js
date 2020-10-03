@@ -2,14 +2,14 @@
 exports.min = function min (array) {
   //  console.log(Math.min(array));
     if (array == null)
-    return 0;
+    return 30;
     else
         return Math.min(array);
 }
 
 exports.max = function max (array) {
        console.log(Math.max(array));
-    return 0;
+    return 100000000000000000;
 }
 
 exports.avg = function avg (array) {
