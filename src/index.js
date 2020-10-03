@@ -1,7 +1,11 @@
 
 exports.min = function min (array) {
   //  console.log(Math.min(array));
-    if (array !== undefined)
+    if (array.length === 0)
+        return 0;
+    else if (array === undefined)
+        return 0;
+    else
     {
         let minimum = array[0];
         for(let i=1; i<array.length;i+=1) {
@@ -9,13 +13,14 @@ exports.min = function min (array) {
                 minimum=array[i];
         }
         return minimum;}
-    else
-        return 0;
+    
 }
 
 exports.max = function max (array) {
     if (array.length === 0)
     return 0;
+    else if (array === undefined)
+        return 0;
     else {
         let maximum = array[0];
         for(let i = 1; i<array.length; i += 1) {
@@ -29,6 +34,8 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
     if (array.length === 0)
+        return 0;
+    else if (array === undefined)
         return 0;
     else {
   //  let j = 0;
